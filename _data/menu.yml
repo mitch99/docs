@@ -1,0 +1,56 @@
+- text: Home
+  url: /
+- subitems:
+  - text: Understanding the data reporting process
+    url: /Reportnet/Understanding-the-data-reporting-process
+  - text: Implementing a simple dataflow
+    url: /Reportnet/Implementing-a-simple-dataflow
+  - text: How to verify quality control tests
+    url: /Reportnet/Howto-verify-quality-control-tests
+  text: The Reportnet platform
+  url: /Reportnet
+- text: The EEA CMS platform
+  url: /EEA-CMS
+- subitems:
+  - subitems:
+    - text: Introduction
+      url: /IT-systems/Data-Dictionary/#introduction
+    - text: Getting started for users
+      url: /IT-systems/Data-Dictionary/#getting-started-for-users
+    - text: Getting started for developers
+      url: /IT-systems/Data-Dictionary/#getting-started-for-developers
+    - text: Features and architecture overview
+      url: /IT-systems/Data-Dictionary/#features-and-architecture-overview
+    - text: Installation, deployment and configuration
+      url: /IT-systems/Data-Dictionary/#installation-deployment-and-configuration
+    - text: Maintenance
+      url: /IT-systems/Data-Dictionary/#maintenance
+    - text: API reference
+      url: /IT-systems/Data-Dictionary/#api-reference
+    - text: Copyright and license
+      url: /IT-systems/Data-Dictionary/#copyright-and-license
+    text: Data Dictionary (DD)
+    url: /IT-systems/Data-Dictionary
+  - subitems:
+    - text: Introduction
+      url: /IT-systems/SDF-Manager/#introduction
+    - text: Getting started for users
+      url: /IT-systems/SDF-Manager/#getting-started-for-users
+    - text: Getting started for developers
+      url: /IT-systems/SDF-Manager/#getting-started-for-developers
+    - text: Features and architecture overview
+      url: /IT-systems/SDF-Manager/#features-and-architecture-overview
+    - text: Installation, deployment and configuration
+      url: /IT-systems/SDF-Manager/#installation-deployment-and-configuration
+    - text: Maintenance
+      url: /IT-systems/SDF-Manager/#maintenance
+    - text: Copyright and license
+      url: /IT-systems/SDF-Manager/#copyright-and-license
+    text: Standard Data Form (SDF) Manager
+    url: /IT-systems/SDF-Manager
+  text: IT-systems
+  url: /IT-systems
+- text: Development guidelines
+  url: /Development-guidelines
+- text: Documentation guidelines
+  url: /Documentation-guidelines

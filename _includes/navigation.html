@@ -1,0 +1,16 @@
+{% assign navurl = page.url | remove: 'index.html' | replace:'/',' ' | rstrip | replace: ' ', '/' %}
+<ul class="nav nav-pills nav-stacked">
+{% for item in include.navigation %}
+	{% assign itemurl = item.url | remove: 'index.html' | replace:'/',' ' | rstrip | replace: ' ', '/' %}
+	{% if itemurl == navurl %}
+		<li class="active">
+	{% else %}
+		<li>
+	{% endif %}
+	<a href="{{ item.url | prepend: site.baseurl }}">{{ item.text }}</a>
+	</li>
+	{% if item.subitems and navurl contains itemurl %}
+		{% include navigation.html navigation=item.subitems %}
+	{% endif %}
+{% endfor %}
+</ul>

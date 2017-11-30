@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta charset="utf-8">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ "app.css" | prepend: site.baseurl | replace:'http:','' }}">
+  <link rel="stylesheet" href="{{ "syntax.css" | prepend: site.baseurl | replace:'http:','' }}">
+</head>
+ <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <nav class="blog-nav">
+              <a class="blog-nav-item" href="/">Home</a>
+              <a class="blog-nav-item" href="/About/">About</a>
+            </nav>
+          </div>
+          <div class="col-sm-4 text-right">
+            <!-- Html Elements for Search -->
+            <div id="search-container">
+              <input type="text" class="form-control" id="search-input" placeholder="search...">
+              <ul id="results-container"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="blog-header">
+        <h1 class="blog-title">EEA & Eionet documentation hub</h1>
+        <p class="lead blog-description">Browse documentation for IT-systems used by the European Environment Agency and the Eionet network.</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+          <div class="blog-post">
+
+            {{ content }}
+
+          </div><!-- /.blog-post -->
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>Topics</h4>
+
+              {% include navigation.html navigation=site.data.menu %}
+
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>
+        <a href="#">Back to top</a> | <a href="{{site.github.repository_url}}/blob/gh-pages/{{page.path}}">Edit this page</a>
+      </p>
+    </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.1/anchor.min.js"></script>
+  <script src="{{ "search.min.js" | prepend: site.baseurl | replace:'http:','' }}"></script>
+  <script src="{{ "app.js" | prepend: site.baseurl | replace:'http:','' }}"></script>
+</body>
+</html>
