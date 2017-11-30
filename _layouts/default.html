@@ -6,7 +6,7 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="{{ "app.css" | prepend: site.baseurl | replace:'http:','' }}">
+  <link rel="stylesheet" href="{{ site.baseurl }}/app.css">
   <link rel="stylesheet" href="{{ "syntax.css" | prepend: site.baseurl | replace:'http:','' }}">
 </head>
  <body>
