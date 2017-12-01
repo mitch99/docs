@@ -6,7 +6,7 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}//app.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/app.css">
   <link rel="stylesheet" href="{{ "/syntax.css" | prepend: site.baseurl }}">
 </head>
  <body>
@@ -16,8 +16,8 @@
         <div class="row">
           <div class="col-sm-8">
             <nav class="blog-nav">
-              <a class="blog-nav-item" href="/">Home</a>
-              <a class="blog-nav-item" href="/About/">About</a>
+              <a class="blog-nav-item" href="{{ site.baseurl }}">Home</a>
+              <a class="blog-nav-item" href="{{ "/About" | prepend: site.baseurl }}">About</a>
             </nav>
           </div>
           <div class="col-sm-4 text-right">
