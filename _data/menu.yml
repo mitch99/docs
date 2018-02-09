@@ -11,6 +11,10 @@
       url: /Reportnet/Howto-verify-quality-control-tests
 - text: The EEA CMS platform
   url: /EEA-CMS
+- text: IT-systems
+  url: /IT-systems
+- text: Data Dictionary (DD)
+  url: /IT-systems/Data-Dictionary
   subitems:
     - text: Introduction
       url: /IT-systems/Data-Dictionary/#introduction
@@ -28,8 +32,8 @@
       url: /IT-systems/Data-Dictionary/#api-reference
     - text: Copyright and license
       url: /IT-systems/Data-Dictionary/#copyright-and-license
-- text: Data Dictionary (DD)
-  url: /IT-systems/Data-Dictionary
+- text: Standard Data Form (SDF) Manager
+  url: /IT-systems/SDF-Manager
   subitems:
     - text: Introduction
       url: /IT-systems/SDF-Manager/#introduction
@@ -45,10 +49,6 @@
       url: /IT-systems/SDF-Manager/#maintenance
     - text: Copyright and license
       url: /IT-systems/SDF-Manager/#copyright-and-license
-- text: Standard Data Form (SDF) Manager
-  url: /IT-systems/SDF-Manager
-- text: IT-systems
-  url: /IT-systems
 - text: Development guidelines
   url: /Development-guidelines
 - text: Documentation guidelines
