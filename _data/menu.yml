@@ -1,18 +1,17 @@
 - text: Home
   url: /
-- subitems:
-  - text: Understanding the data reporting process
-    url: /Reportnet/Understanding-the-data-reporting-process
-  - text: Implementing a simple dataflow
-    url: /Reportnet/Implementing-a-simple-dataflow
-  - text: How to verify quality control tests
-    url: /Reportnet/Howto-verify-quality-control-tests
-  text: The Reportnet platform
-  url: /Reportnet
+- text: The Reportnet platform
+  url: /Reportnet 
+  subitems:
+    - text: Understanding the data reporting process
+      url: /Reportnet/Understanding-the-data-reporting-process
+    - text: Implementing a simple dataflow
+      url: /Reportnet/Implementing-a-simple-dataflow
+    - text: How to verify quality control tests
+      url: /Reportnet/Howto-verify-quality-control-tests
 - text: The EEA CMS platform
   url: /EEA-CMS
-- subitems:
-  - subitems:
+  subitems:
     - text: Introduction
       url: /IT-systems/Data-Dictionary/#introduction
     - text: Getting started for users
@@ -29,9 +28,9 @@
       url: /IT-systems/Data-Dictionary/#api-reference
     - text: Copyright and license
       url: /IT-systems/Data-Dictionary/#copyright-and-license
-    text: Data Dictionary (DD)
-    url: /IT-systems/Data-Dictionary
-  - subitems:
+- text: Data Dictionary (DD)
+  url: /IT-systems/Data-Dictionary
+  subitems:
     - text: Introduction
       url: /IT-systems/SDF-Manager/#introduction
     - text: Getting started for users
@@ -46,9 +45,9 @@
       url: /IT-systems/SDF-Manager/#maintenance
     - text: Copyright and license
       url: /IT-systems/SDF-Manager/#copyright-and-license
-    text: Standard Data Form (SDF) Manager
-    url: /IT-systems/SDF-Manager
-  text: IT-systems
+- text: Standard Data Form (SDF) Manager
+  url: /IT-systems/SDF-Manager
+- text: IT-systems
   url: /IT-systems
 - text: Development guidelines
   url: /Development-guidelines
