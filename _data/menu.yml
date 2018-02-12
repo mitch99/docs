@@ -9,6 +9,8 @@
       url: /Reportnet/Implementing-a-simple-dataflow
     - text: How to verify quality control tests
       url: /Reportnet/Howto-verify-quality-control-tests
+- text: Dataflows
+  url: /Dataflows
 - text: The EEA CMS platform
   url: /EEA-CMS
 - text: IT-systems
